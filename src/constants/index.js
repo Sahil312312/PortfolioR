@@ -1,3 +1,4 @@
+import { link } from "framer-motion/client";
 import {
   mobile,
   backend,
@@ -15,14 +16,24 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  zoop,
+  sharvin,
+  codeSoft,
   carrent,
   jobit,
   tripguide,
-  threejs,
+  express,
+  rise,
+  keeper,
+  search,
+  todo,
+  blog,
+  natours,
+  linux,
+  GCD,
+  leetcode,
+  gfg,
+  cf
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +53,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "DevOps Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Good Problem Solver",
     icon: creator,
   },
 ];
@@ -71,10 +82,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
@@ -97,8 +104,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Express JS",
+    icon: express,
   },
   {
     name: "git",
@@ -112,95 +119,82 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  {
+    name: "linux",
+    icon: linux,
+  },
+  // {
+  //   name: "GCD",
+  //   icon: GCD,
+  // }
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Co-Founder And Engineering",
+    company_name: "Zoop",
+    icon: zoop,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2023 - March 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a MERN stack platform focused on fostering community engagement through peer discovery, scaling to 2500+ users across 10 countries.",
+      "uccessfully built and maintained a consistent user base, with around 200 active users engaged regularly from countries like the USA, Germany, and Canada.",
+      "ed the development and launch of the ZOOP app (PWA) on Google Play Store using Bubble Wrap, achieving 800+ downloads within the first month.",
+      "Implemented real-time chatting, status updates, and social media features using web-sockets technology, resulting in a 40% boost in user engagement.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "SDE Intern",
+    company_name: "Sharvin Management Pvt Ltd",
+    icon: sharvin,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "October 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications various web technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Implementing responsive design and ensuring cross-browser comyatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: " Web Development Intern ",
+    company_name: "Code Soft",
+    icon: codeSoft,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "June 2021 - July 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Gained hands-on experience in building web applications, improving your proficiency in key technologies and frameworks.",
+      "Worked on practical tasks and projects, bridging the gap between theoretical knowledge and real-world application.",
+      "Learned to manage assigned tasks efficiently while meeting deadlines and maintaining high standards.",
+      "Improved teamwork and communication skills by following instructions and working closely with the team, essential for future professional success.",
     ],
   },
 ];
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    platformName: "LEETCODE",
+    platform: leetcode,
+    platformLink: "https://leetcode.com/u/sahilshrivastava312312/",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    platformName: "GFG",
+    platform: gfg,
+    platformLink: "https://www.geeksforgeeks.org/user/sahilshrivastava312312/",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    platformName: "Code Forces",
+    platform: cf,
+    platformLink: "https://codeforces.com/profile/___Sahil",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Rise Bharat",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A dedicated platform can improve the fragmented blue-collar job market by offering verified listings and efficient worker-employer connections.",
     tags: [
       {
         name: "react",
@@ -211,38 +205,62 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Node.js",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: rise,
+    source_code_link: "https://github.com/Sahil312312/rise-bharat-fd",
+    link: "https://rise-bharat-fd-two.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Natours App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A comprehensive tour-selling application with a complete backend featuring advanced functionalities like data aggregation and more.",
     tags: [
       {
-        name: "react",
+        name: "Node.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Express.js",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "MongoDB",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: natours,
+    source_code_link: "https://github.com/Sahil312312/NatoursProject",
+    link: "https://github.com/Sahil312312/NatoursProject",
   },
   {
-    name: "Trip Guide",
+    name: "Search Engine",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a Google search engine clone using React and Redux allows for efficient state management and a responsive user interface, enhancing the user experience. Integrating Web Vitals ensures optimal performance tracking, helping to maintain fast load times and responsiveness.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Google API",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: search,
+    source_code_link: "https://github.com/Sahil312312/google-search",
+    link: "https://sahilgoogle.netlify.app/",
+  },
+  {
+    name: "Keeper",
+    description:
+      "Google Keeper Clone made using react and basic concepts of react such as React-hooks and prop-drilling.",
     tags: [
       {
         name: "nextjs",
@@ -257,8 +275,54 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: keeper,
+    source_code_link: "https://github.com/Sahil312312/keeperCLone",
+    link: "https://keeper-clone-kappa.vercel.app/",
+  },
+  {
+    name: "To-Do list",
+    description:
+      "Developed a server-side rendered to-do list application with EJS as the templating engine enables dynamic content rendering. Using MongoDB Atlas for data storage ensures reliable management of tasks, allowing users to seamlessly add, update, and delete items",
+    tags: [
+      {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "EJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: todo,
+    source_code_link: "https://github.com/Sahil312312/todo",
+    link: "https://todo-11tl.onrender.com/",
+  },
+  {
+    name: "Blog Website",
+    description:
+      "Creating a blog-making website using EJS as the templating engine allows for dynamic content generation without the complexity of a database connection. This setup enables users to create and display blog posts through server-side rendering, ensuring a simple and efficient user experience.",
+    tags: [
+      {
+        name: "Nodejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "EJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Expressjs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: blog,
+    source_code_link:
+      "https://github.com/Sahil312312/Blog/tree/main/EJS-project",
+    link: "https://blog-5wg9.onrender.com/",
   },
 ];
 

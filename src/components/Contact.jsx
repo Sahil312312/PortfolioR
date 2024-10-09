@@ -27,22 +27,26 @@ const Contact = () => {
     });
   };
 
+  //template_unvpijp
+  //service_464ym1a
+  //VbCuw7bpiGVsBSnZz
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_464ym1a',
+        'template_unvpijp',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Sahil Shrivastava",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "sahilshrivastava312312@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'VbCuw7bpiGVsBSnZz'
       )
       .then(
         () => {

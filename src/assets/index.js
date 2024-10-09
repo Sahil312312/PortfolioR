@@ -6,7 +6,12 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
+import rise from "./rise.png"
+import natours from './natours.png'
+import keeper from "./keeper.png"
+import blog from "./blog.png"
+import search from "./searchEngine.png"
+import todo from './todo.png'
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -19,16 +24,19 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
+import express from "./tech/express.png";
+import zoop from "./company/zoop.png";
+import sharvin from "./company/sharvin.jpeg";
+import codeSoft from "./company/codeSoft.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import linux from "./tech/linux.png"
+import GCD from "./tech/GCD.png"
+import leetcode from "./leetcode.png"
+import cf from "./cf.jpeg"
+import gfg from "./gfg.jpg"
+
 
 export {
   logo,
@@ -39,6 +47,12 @@ export {
   github,
   menu,
   close,
+  rise,
+  natours,
+  keeper,
+  blog,
+  search,
+  todo,
   css,
   docker,
   figma,
@@ -51,12 +65,16 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  express,
+  zoop,
+  sharvin,
+  codeSoft,
   carrent,
   jobit,
   tripguide,
+  linux,
+  GCD,
+  leetcode,
+  cf,
+  gfg
 };
