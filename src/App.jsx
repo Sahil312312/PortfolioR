@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from './components';
 import { Analytics } from "@vercel/analytics/react";
+import Footer from './components/footer';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <StarsCanvas />
           </div>
         </div>
+        <Footer />
       </BrowserRouter>
       <Analytics /> {/* This should be outside BrowserRouter */}
     </>
