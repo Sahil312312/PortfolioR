@@ -16,9 +16,9 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <div className='bg-tertiary p-4 sm:p-5 rounded-2xl w-full'>
-        <div className='relative w-full h-[180px] sm:h-[230px]'>
+    <div >
+      <div className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'>
+        <div className='relative w-full h-[200px] sm:h-[230px]'>
           <img
             src={image}
             alt='project_image'
@@ -39,12 +39,12 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className='mt-3 sm:mt-5'>
-          <h3 className='text-white font-bold text-[18px] sm:text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[12px] sm:text-[14px]'>{description}</p>
+        <div className='mt-4 sm:mt-5'>
+          <h3 className='text-white font-bold text-[20px] sm:text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary text-[13px] sm:text-[14px]'>{description}</p>
         </div>
 
-        <div className='mt-3 sm:mt-4 flex flex-wrap gap-1 sm:gap-2'>
+        <div className='mt-3 sm:mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -55,28 +55,31 @@ const ProjectCard = ({
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div >
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
-
-      <div className='w-full flex'>
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[14px] sm:text-[17px] max-w-lg sm:max-w-3xl leading-[22px] sm:leading-[30px]'
-        >
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
-        </motion.p>
       </div>
 
-      <div className='mt-12 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7'>
+      <div className='w-full flex'>
+        <p
+          className='mt-3 text-secondary text-[15px] sm:text-[17px] max-w-lg sm:max-w-3xl leading-[24px] sm:leading-[30px]'
+        >
+          Following projects showcase my skills and experience through
+          real-world examples of my work. Each project is briefly described with
+          links to code repositories and live demos. It reflects my
+          ability to solve complex problems, work with different technologies,
+          and manage projects effectively.
+        </p>
+      </div>
+
+      <div className='mt-12 sm:mt-20 flex flex-wrap gap-4 sm:gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
