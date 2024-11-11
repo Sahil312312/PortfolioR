@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  console.log(localStorage.getItem("isMobile"))
   return (
     <section className="relative w-full h-screen max-auto">
       <div
@@ -21,12 +22,13 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {" "}
-            I develop Full-Stack web-developer{" "}
+            I am a Full-Stack web-developer{" "}
             <br className="sm:block hidden" /> and can handle Deployment.
           </p>
         </div>
       </div>
-      <ComputersCanvas/>
+      {localStorage.getItem("isMobile") === "false" && <ComputersCanvas/> }
+      
 
        <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

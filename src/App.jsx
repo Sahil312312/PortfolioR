@@ -1,9 +1,26 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from './components';
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works ,MobileTech } from './components';
 import { Analytics } from "@vercel/analytics/react";
 import Footer from './components/footer';
+import { useEffect } from "react";
 
 const App = () => {
+
+  useEffect(()=>{
+    function isMobile() {
+      return /iPhone|iPad|iPod|Android|webOS|BlackBerry|Windows Phone/i.test(navigator.userAgent);
+    }
+
+    if (isMobile()) {
+        localStorage.setItem("isMobile","true")
+    }else{
+        localStorage.setItem("isMobile","false")
+    }
+  })
+  
+
+
+
   return (
     <>
       <BrowserRouter>
@@ -14,7 +31,8 @@ const App = () => {
           </div>
           <About />
           <Experience />
-          <Tech />
+      {localStorage?.getItem("isMobile") === "false" ? <Tech /> : <MobileTech/> }
+          {/* <Tech /> */}
           <Works />
           <Feedbacks />
           <div className="relative z-0">
