@@ -4,6 +4,15 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { close, menu } from "../assets";
 
+const handleDownload = () => {
+  console.log("Sas");
+  
+  const link = document.createElement("a")
+  link.href = "/resume.pdf";
+  link.download = "sahilResume.pdf";
+  link.click();
+}
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState();
@@ -34,7 +43,11 @@ const Navbar = () => {
                 className={`${
                   active === link.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer `}
-                onClick={() => setActive(link.title)}
+                onClick={() => {
+                  setActive(link.title)
+                  if (link.id === "download") handleDownload();     
+
+                }}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
@@ -63,6 +76,7 @@ const Navbar = () => {
                       active === link.title ? "text-white" : "text-secondary"
                     } font-poppins font-medium cursor-pointer text-[16px] `}
                     onClick={() => {
+                      if (link.id === "download") handleDownload();     
                       setActive(link.title);
                       setToggle(!toggle);
                     }}

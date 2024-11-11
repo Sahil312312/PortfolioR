@@ -36,6 +36,8 @@ import {
   cf
 } from "../assets";
 
+
+
 export const navLinks = [
   {
     id: "about",
@@ -49,6 +51,10 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id:"download",
+    title:"Downlaod CV"
+  }
 ];
 
 const services = [
